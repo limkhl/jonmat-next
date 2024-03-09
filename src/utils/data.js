@@ -12,8 +12,10 @@ const DataProvider = ({ children }) => {
 
   useLayoutEffect(() => {
     const fetchYears = async () => {
-      const response = await fetch('/data/years.json')
-      const data = await response.json()
+      // const response = await fetch('/data/years.json')
+      // const data = await response.json()
+      // TODO : 2022 자동 빌드 되게 하고 나서 주석 해제
+      const data = ['2016', '2018', '2020', '2022']
 
       setYears(data.reverse())
       setYear(data[0])
