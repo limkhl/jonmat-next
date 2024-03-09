@@ -5,9 +5,11 @@ import { useData } from 'utils/data'
 import { KIND_COLORS } from 'theme'
 import 'leaflet/dist/leaflet.css'
 
+const API_KEY = process.env.NEXT_PUBLIC_STADIA_API_KEY
+
 const CENTER = [37.5207598,126.9209653]
 
-const TILE_URL = 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png'
+const TILE_URL = `https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=${API_KEY}`
 
 const Container = styled.div`
   position: absolute;
