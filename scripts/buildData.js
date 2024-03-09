@@ -6,9 +6,10 @@ const Papa = require('papaparse')
 const RESTAURANTS_SHEET = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTmev0k19hbcpS3ApSf87xdXy6wz1fZiOGlB2sTEusRw2-lFJ273_NzYKzzPQ9hTnAOYnrOoPLau1KE/pub?gid=2015788390&single=true&output=csv'
 
 const EXPENSE_SHEETS = {
-  2017: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTmev0k19hbcpS3ApSf87xdXy6wz1fZiOGlB2sTEusRw2-lFJ273_NzYKzzPQ9hTnAOYnrOoPLau1KE/pub?gid=1764752662&single=true&output=csv',
-  2018: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTmev0k19hbcpS3ApSf87xdXy6wz1fZiOGlB2sTEusRw2-lFJ273_NzYKzzPQ9hTnAOYnrOoPLau1KE/pub?gid=336516275&single=true&output=csv',
-  2020: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTmev0k19hbcpS3ApSf87xdXy6wz1fZiOGlB2sTEusRw2-lFJ273_NzYKzzPQ9hTnAOYnrOoPLau1KE/pub?gid=478721577&single=true&output=csv',
+  2017: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRpkPysL2q9aWvYAJtL_h5cJIn1_LLgq04Pty-nugxGlqmk2j2C-kHm9CJmWx0qxGzqhjf7XwIVTMfD/pub?gid=1764752662&single=true&output=csv',
+  2018: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRpkPysL2q9aWvYAJtL_h5cJIn1_LLgq04Pty-nugxGlqmk2j2C-kHm9CJmWx0qxGzqhjf7XwIVTMfD/pub?gid=336516275&single=true&output=csv',
+  2020: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRpkPysL2q9aWvYAJtL_h5cJIn1_LLgq04Pty-nugxGlqmk2j2C-kHm9CJmWx0qxGzqhjf7XwIVTMfD/pub?gid=478721577&single=true&output=csv',
+  2022: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRpkPysL2q9aWvYAJtL_h5cJIn1_LLgq04Pty-nugxGlqmk2j2C-kHm9CJmWx0qxGzqhjf7XwIVTMfD/pub?gid=14667212&single=true&output=csv',
 }
 
 const fetchCsv = async url => {
